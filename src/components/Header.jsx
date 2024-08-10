@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel"
+
 
 export default function Header(){
     return(
+<>
+    <Carousel/>
         <header>
             <Link to='/home'>
             <p>Home</p>
@@ -13,5 +17,6 @@ export default function Header(){
                 <p>Offers</p>
             </Link>
         </header>
+</>
     )
 }
