@@ -1,7 +1,10 @@
 import Header from "../Header/Header"
-
+import Carousel from "./Carousel"
 export default function Home(){
     return(
-    <Header/>
+        <>
+        <Carousel></Carousel>
+        <Header></Header>
+        </>
     )
 }
