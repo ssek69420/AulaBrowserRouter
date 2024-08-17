@@ -1,25 +1,24 @@
 import { Link } from "react-router-dom";
-import "../styling/Style.css"
 
 export default function Header(){
     return(
 <>
     <div>
         <header>
-            <div className="HeaderOverall">
+            <div className="header-overall">
                 <div className="logoHeader">
                 <img src="src\components\images\reallogo.png" alt="ibanez-logo" className="logo"/>
                 </div>
-            </div>
                 <Link to='/'>
-                <p>Home</p>
+                <p>HOME</p>
                 </Link>
                 <Link to='/product'>
-                    <p>Product</p>
+                    <p>PRODUCT</p>
                 </Link>
                 <Link to='/offer'>
-                    <p>Offers</p>
+                    <p>OFFERS</p>
                 </Link>
+            </div>
         </header>
     </div>
 </>

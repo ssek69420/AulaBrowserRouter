@@ -1,9 +1,10 @@
-import { Carousel } from "react-responsive-carousel"
+import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function Caruso(){
     return(
         <>
+        <div className="carousel-container">
         <Carousel
     infiniteLoop={true}
     autoPlay={true}
@@ -33,6 +34,7 @@ export default function Caruso(){
     </div>
 
     </Carousel>
+    </div>
         </>
     )
 }
