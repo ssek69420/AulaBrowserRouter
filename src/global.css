@@ -7,7 +7,7 @@ body{
 }
 
 .carousel-container{
-    border-radius: 10px;
+    border: 20px cyan solid;
 }
 
 .header-overall {
@@ -26,6 +26,8 @@ body{
 .logoHeader {
     display: flex;
     align-items: center;
+    border: 10px solid purple;
+    border-radius: 5px;
 }
 
 .logo {
