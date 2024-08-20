@@ -2,8 +2,10 @@
 export default function Foot(){
 
     return(
+        <div className="footer-container">
         <footer>
-            <h1>hi</h1>
+            <p>hi</p>
         </footer>
+        </div>
     )
 }

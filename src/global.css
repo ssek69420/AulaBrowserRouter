@@ -45,6 +45,7 @@ body {
 .headerText{
     transition: 0.5s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
 .headerText:hover{
@@ -133,8 +134,23 @@ body {
     color: white;
 }
 
+.container-products{
+    display: flex;
+    border: ridge 10px blue;
+    text-align: center;
+    background-color: #000428;
+}
+
+.product-i{
+    width: auto;
+    align-items: center;
+    align-content: center;
+}
+
+
 
 footer {
+    background-size: cover;
     background-image: url(https://www.ibanez.com/na/news_file/file/LN_TimHenson.jpg);
     padding: 20px;
     margin-top: auto;

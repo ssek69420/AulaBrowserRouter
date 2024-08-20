@@ -1,14 +1,36 @@
 import Caruso from "../components/Caruso"
 import Header from "../Header/Header"
 import Foot from "../components/Foot"
+import { useState } from "react";
 
 export default function Home(){
+    const [productsList, setProductsList] = useState([
+        { id: 1, title: "AZ Series", img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_az_en.png' },
+        { id: 2, title: '', price: '', img: '' },
+        { id: 3, title: '', price: '', img: '' },
+        { id: 4, title: '', price: '', img: '' }
+      ]);
+
     return(
-        <>
+        <div>
         <Header/>
         <br />
         <Caruso/>
         <br />
+
+        <div className="container-products">
+        {productsList.map((product)=>(
+            <div className='product-i' key={product.id}>
+                <img src={product.img}/>
+                <p>{product.price}</p>
+                <h2>{product.title}</h2>
+            </div>
+        ))}
+        </div>
+
+        <br/>
+
+        
         <div className="aboutContainer">
             <h1 className="aboutus">ABOUT US</h1>
             <div className="aboutContent">
@@ -36,8 +58,9 @@ export default function Home(){
                     <strong>Phone:</strong> +55 67 9923-1230<br />
                     <strong>Address:</strong> Rua Teodoro Franco de Oliveira, Iná, São José dos Pinhais, Paraná (83065-190).
                 </p>
-            </div>
         </div>
-        </>
+    </div>
+    <Foot/>
+    </div>
     )
 }
