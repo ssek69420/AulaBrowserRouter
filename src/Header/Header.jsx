@@ -10,13 +10,13 @@ export default function Header(){
                 <img src="src\components\images\reallogo.png" alt="ibanez-logo" className="logo"/>
                 </div>
                 <Link to='/'>
-                <p>HOME</p>
+                <p className="headerText">HOME</p>
                 </Link>
                 <Link to='/product'>
-                    <p>PRODUCT</p>
+                    <p className="headerText">PRODUCT</p>
                 </Link>
                 <Link to='/offer'>
-                    <p>OFFERS</p>
+                    <p className="headerText">OFFERS</p>
                 </Link>
             </div>
         </header>

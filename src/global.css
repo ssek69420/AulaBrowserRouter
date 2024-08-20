@@ -25,22 +25,33 @@ body {
 
 .carousel-container:hover {
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header-overall {
+    font-size: x-large;
     height: 80px;
     width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background: linear-gradient(90deg, #000428, #004e92);
+    background: linear-gradient(90deg, #000428, #2e88d6);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+.headerText{
+    transition: 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.headerText:hover{
+    font-size: 3rem;
+}
+
+
 
 .logoHeader {
     display: flex;
@@ -52,6 +63,11 @@ body {
     width: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.logo:hover{
+    box-shadow: 0 10px 90px white;
 }
 
 .nav-links {
@@ -78,6 +94,7 @@ body {
     background-color: #222;
     padding: 40px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .aboutus {
