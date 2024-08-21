@@ -6,14 +6,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,3,1) 0%, rgba(95,166,180,1) 100%);
+    background-image:url('src/components/images/wallpaper.jpg');
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-
 
 
 .carousel-container {
@@ -50,6 +46,7 @@ body {
 
 .headerText:hover{
     font-size: 3rem;
+    color: rgb(255, 0, 153);
 }
 
 
@@ -136,26 +133,181 @@ body {
 
 .container-products{
     display: flex;
-    border: ridge 10px blue;
-    text-align: center;
-    background-color: #000428;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .product-i{
-    width: auto;
-    align-items: center;
-    align-content: center;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 4px wheat;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-i:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px black;
+}
+
+.product-i img{
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+}
+
+.products-Week{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.product-i h2{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-i h1{
+    font-size: 1.2rem;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.product-i p{
+    font-size: 1rem;
+    color: #777;
 }
 
 
+.partners {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: #000428 0px 5px 3px;
+}
 
+.partners-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partner-i img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 10px solid cyan;
+    margin: 10px;
+}
+
+/* Footer styles; not working properly, image
+filling but zooming in too much, fix it.*/
 footer {
     background-size: cover;
     background-image: url(https://www.ibanez.com/na/news_file/file/LN_TimHenson.jpg);
-    padding: 20px;
+    padding: 30px;
+    width: auto;
+    height: auto;
     margin-top: auto;
     color: white;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 3px;
+}
+
+/* Media queries for responsiveness..? idk 
+seems like
+the wrong word to use */
+@media (max-width: 1200px) {
+    .nav-links {
+        gap: 15px;
+    }
+
+    .header-overall {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .product-i {
+        width: 220px;
+    }
+
+    .partners {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .header-overall {
+        font-size: 2rem;
+        border-radius: 100px;
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .product-i {
+        width: 220px;
+    }
+
+    .partners {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-overall {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .headerText {
+        font-size: 1.7rem;
+    }
+
+    .product-i {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .aboutContainer {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .aboutus {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1.5rem;
+    }
+
+    .partners {
+        font-size: 1.8rem;
+    }
+
+    .partners-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partner-i img {
+        width: 100%;
+        border: 5px solid cyan;
+    }
 }

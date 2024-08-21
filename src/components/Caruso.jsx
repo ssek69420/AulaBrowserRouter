@@ -6,13 +6,13 @@ export default function Caruso(){
         <>
         <div className="carousel-container">
         <Carousel
-    infiniteLoop={true}
-    autoPlay={true}
-    useKeyboardArrows={true}
-    showArrows={true}
-    showStatus={false}
-    showThumbs={false}
-    dynamicHeight={true}
+        infiniteLoop={true}
+        autoPlay={true}
+        useKeyboardArrows={true}
+        showArrows={true}
+        showStatus={false}
+        showThumbs={false}
+        dynamicHeight={true}
 >
     <div>
         <img src="https://www.ibanez.com/images/index/mainSlide/top_sig.jpg" alt="ibanez-guitars-signature" />

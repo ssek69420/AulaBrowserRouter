@@ -4,33 +4,61 @@ import Foot from "../components/Foot"
 import { useState } from "react";
 
 export default function Home(){
-    const [productsList, setProductsList] = useState([
-        { id: 1, title: "AZ Series", img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_az_en.png' },
-        { id: 2, title: '', price: '', img: '' },
-        { id: 3, title: '', price: '', img: '' },
-        { id: 4, title: '', price: '', img: '' }
-      ]);
+    const [productsList] = useState([
+        { id: 1, title: "AZ Series", sign: "Marcelino's choice",  price: '$6000.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_az_en.png', discount: true },
+        { id: 2, title: 'AZES Series', sign: "Azali's choice",  price: '$2300.23', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_azes_en.jpg', discount: false },
+        { id: 3, title: 'AZS Series', sign: "Van Halen's choice",  price: '$3000.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_azs_en.jpg', discount: false },
+        { id: 4, title: 'RG Series', sign: "Scott Lepage's choice", price: '$8999.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_rg_en.jpg', discount: false },
+        { id: 5, title: 'Q Series', sign: "Ichika Nito's choice", price: '$2930.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_q_eu.jpg', discount: false }
+    ]);
+
+    const [partnersList] = useState([
+        { partner_id: 1, partner_name: "Tim Henson", img: 'https://i.scdn.co/image/ab67616100005174181a97e0b0355f077d9e3a04'},
+        { partner_id: 1, partner_name: "Scott Lepage", img: 'https://www.ibanez.com/common/product_artist_file/file/a_main_ScottLePage.jpg'},
+        { partner_id: 1, partner_name: "Ichika Nito", img: 'https://www.jame-world.com/media/image/2022-12/12827.jpg'},
+        { partner_id: 1, partner_name: "Van Halen", img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Eddie_Van_Halen_at_the_New_Haven_Coliseum.jpg/1200px-Eddie_Van_Halen_at_the_New_Haven_Coliseum.jpg'},
+        { partner_id: 1, partner_name: "Mateus Asato", img: 'https://conteudo.imguol.com.br/c/entretenimento/ef/2018/10/03/o-guitarrista-brasileiro-mateus-asato-1538598749096_v2_450x600.jpg'},
+        { partner_id: 1, partner_name: "Michael Jackson (A.K.A, Kaike)", img: 'https://i.pinimg.com/originals/2d/7e/a5/2d7ea54b2663d7e5ab5078acc4dc5d65.jpg'},
+    ])
 
     return(
-        <div>
+        <>
         <Header/>
         <br />
         <Caruso/>
         <br />
-
+                <div className="products-Week">
+                <h2>PRODUCTS OF THE WEEK</h2>
+                </div>
         <div className="container-products">
+                
         {productsList.map((product)=>(
             <div className='product-i' key={product.id}>
                 <img src={product.img}/>
                 <p>{product.price}</p>
                 <h2>{product.title}</h2>
+                <h1>{product.sign}</h1>
             </div>
         ))}
         </div>
-
         <br/>
+            <h2 className="partners">PARTNERS</h2>
+            <div className="partners-container">
+            {
+                partnersList.map((partner) =>(
+                    <div className="partner-i" key={partner.partner_id}>
+                        <img src={partner.img}/>
+                        <h2>{partner.partner_name}</h2>
+                    </div>
+                    
+            
+                ))
+            }
+            </div>
 
-        
+
+
+
         <div className="aboutContainer">
             <h1 className="aboutus">ABOUT US</h1>
             <div className="aboutContent">
@@ -61,6 +89,6 @@ export default function Home(){
         </div>
     </div>
     <Foot/>
-    </div>
+    </>
     )
 }

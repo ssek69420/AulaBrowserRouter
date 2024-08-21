@@ -13,7 +13,7 @@ export default function Header(){
                 <p className="headerText">HOME</p>
                 </Link>
                 <Link to='/product'>
-                    <p className="headerText">PRODUCT</p>
+                    <p className="headerText">PRODUCTS</p>
                 </Link>
                 <Link to='/offer'>
                     <p className="headerText">OFFERS</p>

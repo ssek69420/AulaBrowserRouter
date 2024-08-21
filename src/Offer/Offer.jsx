@@ -1,7 +1,7 @@
 export default function Offer(){
     return(
         <>
-        <h1>Offers</h1>
+        <h1>Offer</h1>
         </>
     )
 }
