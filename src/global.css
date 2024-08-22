@@ -12,6 +12,21 @@ body {
 }
 
 
+.butn{
+    font-family: sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: aqua;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.butn:hover{
+    background-color: red;
+}
+
+
 .carousel-container {
     border: none;
     padding: 10px;
@@ -222,7 +237,7 @@ footer {
 
 /* Media queries for responsiveness..? idk 
 seems like
-the wrong word to use */
+the wrong words to use */
 @media (max-width: 1200px) {
     .nav-links {
         gap: 15px;
