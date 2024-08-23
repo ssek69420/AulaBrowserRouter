@@ -7,10 +7,10 @@ import ListProducts from "../components/ListProducts";
 export default function Home(){
     const [productsList] = useState([
         { id: 1, title: "AZ Series", sign: "Marcelino's choice",  price: '$6000.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_az_en.png', discount: true },
-        { id: 2, title: 'AZES Series', sign: "Azali's choice",  price: '$2300.23', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_azes_en.jpg', discount: false },
-        { id: 3, title: 'AZS Series', sign: "Van Halen's choice",  price: '$3000.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_azs_en.jpg', discount: false},
-        { id: 4, title: 'RG Series', sign: "Scott Lepage's choice", price: '$8999.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_rg_en.jpg', discount: false},
-        { id: 5, title: 'Q Series', sign: "Ichika Nito's choice", price: '$2930.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_q_eu.jpg', discount: false}
+        { id: 2, title: 'AZES Series', sign: "Azali's choice",  price: '$2300.23', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_azes_en.jpg', discount: true },
+        { id: 3, title: 'AZS Series', sign: "Van Halen's choice",  price: '$3000.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_azs_en.jpg', discount: true},
+        { id: 4, title: 'RG Series', sign: "Scott Lepage's choice", price: '$8999.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_rg_en.jpg', discount: true},
+        { id: 5, title: 'Q Series', sign: "Ichika Nito's choice", price: '$2930.00', img: 'https://www.ibanez.com/common/product_artist_file/file/pm_thum_eg_q_eu.jpg', discount: true}
     ]);
 
     const [partnersList] = useState([
@@ -83,7 +83,9 @@ export default function Home(){
                 </p>
         </div>
     </div>
-    <Foot/>
+    <br/>
+    <br/>
+    <Foot title={'Welcome!'}/>
     </>
     )
 }

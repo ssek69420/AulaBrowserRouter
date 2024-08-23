@@ -1,10 +1,9 @@
-
-export default function Foot(){
+export default function Foot({title}){
 
     return(
         <div className="footer-container">
         <footer>
-            <p>hi</p>
+            <p>{title}</p>
         </footer>
         </div>
     )

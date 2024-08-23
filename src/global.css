@@ -11,9 +11,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.product-i-image{
+    height: auto;
+    width: fit-content;
+}
+
 
 .butn{
-    font-family: sans-serif;
     border: none;
     border-radius: 20px;
     background-color: aqua;
@@ -23,7 +27,8 @@ body {
 }
 
 .butn:hover{
-    background-color: red;
+    background-color: gold;
+    
 }
 
 
@@ -70,6 +75,8 @@ body {
     display: flex;
     align-items: center;
 }
+
+
 
 .logo {
     height: 100px;
@@ -180,6 +187,23 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+.products-title{
+    font-size: 3rem;
+    color: aliceblue;
+    text-shadow: #222 20px 3px 9px;
+}
+
+.discount-price{
+    color: blue;
+}
+
+.price{
+    text-decoration: line-through;
+}
+
+
+
+
 .product-i h2{
     margin-top: 15px;
     font-size: 1.5rem;
@@ -220,24 +244,24 @@ body {
     margin: 10px;
 }
 
-/* Footer styles; not working properly, image
-filling but zooming in too much, fix it.*/
 footer {
-    background-size: cover;
-    background-image: url(https://www.ibanez.com/na/news_file/file/LN_TimHenson.jpg);
     padding: 30px;
-    width: auto;
-    height: auto;
-    margin-top: auto;
-    color: white;
+    color: rgb(130, 85, 85);
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 20px solid rgba(255, 255, 255, 0.1);
     border-radius: 3px;
+    transition: 0.3s;
 }
 
-/* Media queries for responsiveness..? idk 
-seems like
-the wrong words to use */
+footer:hover {
+    border-top: 25px solid white;
+    color: white;
+}
+
+
+
 @media (max-width: 1200px) {
     .nav-links {
         gap: 15px;
@@ -295,8 +319,13 @@ the wrong words to use */
     }
 
     .product-i {
-        width: 100%;
+        width: 65%;
         margin-bottom: 20px;
+    }
+
+    .product-i img {
+        width: 278px;
+        
     }
 
     .aboutContainer {
