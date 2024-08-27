@@ -18,7 +18,7 @@ export default function ListProducts({list}){
                 <h2>{product.title}</h2>
                 <h1>{product.sign}</h1>
                 <div className="btn-container">
-                <button className="butn"><strong>COMPRAR</strong></button>
+                <button className="butn"><strong>BUY</strong></button>
                 </div>
             </div>
         ))}
